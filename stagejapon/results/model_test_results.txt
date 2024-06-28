@@ -1,0 +1,6 @@
+test folder = fold1 in urbansound dataSet
+training folders = from folder 2 to 10 in urbansound dataSet
+number of correct answer = 539 (61,7%) 
+total files = 873
+Learning dropout = 0.3
+model accuracy = 87.1%
