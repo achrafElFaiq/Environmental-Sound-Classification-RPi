@@ -82,7 +82,7 @@ print('Test: '+test_subdir, end=' ', flush=True)
 
 # Setting name of directory for training
 train_subdirs = subdirs
-#train_subdirs.remove(test_subdir)
+train_subdirs.remove(test_subdir)
 
 # Load training data
 train_data = np.zeros([IMAGESIZE,IMAGESIZE])
