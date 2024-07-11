@@ -123,9 +123,27 @@ You will find the names of all the packages installed in our environment inside 
 For data, we used the UrbanSound dataset: [UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html). 
 A README file to understand how this dataset is structured is provided in the "Data" folder.
 
-### Data Preprocessing
-For this part we use the makeinputdata_ps2024.py script which takes .wav formated sound files organized based on the urbansound dataset and we get 10 (classes) collections of spectrograms of the sounds
+To enhance the robustness and generalization capability of our urban audio classification model, we employed several data augmentation techniques:
 
+- **Pitch Shifting**: Modifying the pitch of audio samples to create variations in frequency content.
+- **Noise Injection**: Adding random noise to audio samples to simulate different recording environments.
+- **Time Stretching**: Altering the speed of audio playback without affecting the pitch.
+- **Volume Changes**: Randomly adjusting the volume levels to create variations in loudness.
+- **Shifting**: Shifting the audio in time to create variations in temporal alignment.
+
+## Workflow
+
+1. **Initial Dataset**: The original dataset comprises audio samples categorized into different folders, each representing a distinct sound class.
+2. **Augmentation Process**: For each original folder, 7 additional folders containing augmented data were generated. This was accomplished using the `5-data-augmentation.ipynb` notebook.
+3. **Expanded Dataset Structure**: The augmentation process expanded the dataset to 80 folders of sounds, with an approximate total of 70,000 audio samples.
+
+
+The augmentation process was executed using the resources and tools available in the `urban-audio-classifier` repository by Eduardo Garcia Rajo. The specific notebook used for this process is `5-data-augmentation.ipynb`.
+
+
+### Data Preprocessing
+
+For this part we use the makeinputdata_ps2024.py script which takes .wav formated sound files organized based on the urbansound dataset and we get 10 (classes) collections of spectrograms of the sounds
 For each fold, the script performs the following steps:
 
 1. **Setup Directory Path and Initialize Arrays**
