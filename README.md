@@ -1,9 +1,9 @@
 # Project: Training CNN Model on Ubuntu with GPU and application using Raspberry GUI App
 
-## Introduction
+# Introduction
 This project is developed as part of our internship research topic at OYAMA INSTITUTE OF TECHNOLOGY under the guidance of Dr. HIRATA Katsumi. It focuses on creating a GUI application for the Raspberry Pi 4 that uses a Convolutional Neural Network (CNN) model to classify environmental sounds based on their spectrograms. The project involves setting up the necessary software environment on Ubuntu 20.04.6 LTS, configuring GPU support, and developing the model and the GUI application.
 
-## Table of Contents
+# Table of Contents
 1. [Machine](#machine)
    - [Installing Ubuntu (22.04.4 LTS)](#installing-ubuntu-22044-lts)
    - [Configuring Wired Connection on Ubuntu (If You Don't Have WIFI)](#configuring-wired-connection-on-ubuntu-if-you-dont-have-wifi)
@@ -20,9 +20,9 @@ This project is developed as part of our internship research topic at OYAMA INST
    - [Using the GUI app](#using-the-gui-app)
 
 
-## Machine
+# Machine
 
-### Installing Ubuntu 22.04.4 LTS (Jammy Jellyfish)
+## Installing Ubuntu 22.04.4 LTS (Jammy Jellyfish)
 To set up your machine for this project, you need to install the latest version of Ubuntu, which is 22.04.4 LTS (Jammy Jellyfish). Follow the steps below:
 
 1. **Download Ubuntu 22.04.4 LTS (Jammy Jellyfish)**
@@ -43,7 +43,7 @@ To set up your machine for this project, you need to install the latest version 
 By following these steps, you will have the focal version of Ubuntu installed and ready for the next stages of your project setup.
 
 
-### Configuring Wired Connection on Ubuntu (If You Don't Have WIFI)
+## Configuring Wired Connection on Ubuntu (If You Don't Have WIFI)
 
 1. **Identify Network Interface**
    - Use the command `ip link show` or `ifconfig` to find the name of your network interface.
@@ -58,7 +58,7 @@ By following these steps, you will have the focal version of Ubuntu installed an
      ```
      (Replace `eth0` with your network interface name).
 
-### Setup Environment for GPU Usage
+## Setup Environment for GPU Usage
 
 ### Local Setup
 
@@ -117,7 +117,7 @@ Once you are in your environment (`ml`), install the following using pip:
 You will find the names of all the packages installed in our environment inside the repository (Environment Specs) folder!
 
 
-### Model
+## Model
 
 ### Data
 For data, we used the UrbanSound dataset: [UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html). 
@@ -131,7 +131,7 @@ To enhance the robustness and generalization capability of our urban audio class
 - **Volume Changes**: Randomly adjusting the volume levels to create variations in loudness.
 - **Shifting**: Shifting the audio in time to create variations in temporal alignment.
 
-## Workflow
+### Workflow
 
 1. **Initial Dataset**: The original dataset comprises audio samples categorized into different folders, each representing a distinct sound class.
 2. **Augmentation Process**: For each original folder, 7 additional folders containing augmented data were generated. This was accomplished using the `5-data-augmentation.ipynb` notebook.
@@ -222,12 +222,9 @@ These steps train a convolutional neural network (CNN) to classify environmental
 ### Model Analysis
 Discuss the results, including metrics and performance evaluation.
 
-##### Confusion Matrix
-
-##### Accuracy and loss
 
 
-## Raspberry
+# Raspberry
 
 We have developed a user-friendly Graphical User Interface (GUI) for our sound classification model using the PyQt5 library in Python. This GUI provides a seamless experience for users to interact with our model, offering two primary functionalities:
 
