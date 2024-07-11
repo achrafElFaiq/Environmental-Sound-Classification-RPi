@@ -225,10 +225,10 @@ We have developed a user-friendly Graphical User Interface (GUI) for our sound c
 
 This intuitive interface simplifies the sound classification process, making it accessible to users with varying levels of technical expertise. By integrating functionalities for selecting and recording sounds, our GUI ensures easy utilization of our sound classification model for various applications, such as environmental sound recognition and audio analysis.
 
-1. **Recording Case**
+## **Recording Case**
 ![Example Image](stagejapon/app/app.png)
 
-2. **Existing File choice**
+## **Existing File choice**
 ![Example Image](stagejapon/app/app_2.png)
 
 
