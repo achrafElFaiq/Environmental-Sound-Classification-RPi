@@ -6,7 +6,7 @@ This project is developed as part of our internship research topic at OYAMA INST
 
 # User guide
 
-Follow these steps to set up and run the sound classification model:
+Follow these steps to set up and run the sound classification model(All the details are explained below):
 
 1. **Download Dataset and Apply Data Augmentation**
    - Obtain the UrbanSound8K or ESC50 dataset.
@@ -38,7 +38,7 @@ You can either use the model on command line or on a GUI:
      python app.py
      ```
 
-All the details are explained below.
+
 
 
 # Table of Contents
@@ -177,7 +177,7 @@ To enhance the robustness and generalization capability of our urban audio class
 
 The augmentation process was executed using the resources and tools available in the `urban-audio-classifier` repository by Eduardo Garcia Rajo. The specific notebook used for this process is `5-data-augmentation.ipynb`.
 
-![Example Image](stagejapon/app/data_aug.png)
+![Example Image](stagejapon/Images/data_aug.png)
 
 ### Data Preprocessing
 
