@@ -1,17 +1,63 @@
-# Stage EL FAIQ Achraf / BENJELLOUN Saad OYAMA INSTITUTE OF TECHNOLOGY
+# Project: Training CNN Model on Ubuntu with GPU and application using Raspberry GUI App
+
+## Introduction
+This project is developed as part of our internship research topic at OYAMA INSTITUTE OF TECHNOLOGY under the guidance of Dr. HIRATA Katsumi. It focuses on creating a GUI application for the Raspberry Pi 4 that uses a Convolutional Neural Network (CNN) model to classify environmental sounds based on their spectrograms. The project involves setting up the necessary software environment on Ubuntu 20.04.6 LTS, configuring GPU support, and developing the model and the GUI application.
+
+## Table of Contents
+1. [Machine](#machine)
+   - [Installing Latest Version of Ubuntu (20.04.6 LTS)](#installing-latest-version-of-ubuntu-20046-lts)
+   - [Configuring Wired Connection on Ubuntu (If You Don't Have WIFI)](#configuring-wired-connection-on-ubuntu-if-you-dont-have-wifi)
+   - [Setup Environment for GPU Usage](#setup-environment-for-gpu-usage)
+     - [Local Setup](#local-setup)
+     - [Virtual Environment Setup (Python 3.8.10)](#virtual-environment-setup-python-3810)
+   - [Model](#model)
+     - [Data](#data)
+     - [Data Preprocessing](#data-preprocessing)
+     - [Model Conception](#model-conception)
+     - [Model Training](#model-training)
+     - [Model Analysis](#model-analysis)
+2. [Raspberry](#raspberry)
+   - [Using the GUI app](#using-the-gui-app)
 
 ## Installing Latest Version of Ubuntu (20.04.6 LTS)
 
-1. **Download Ubuntu 20.04.6 LTS (Focal Fossa)**
-   - From the official website: [Ubuntu 20.04.6 LTS](https://releases.ubuntu.com/focal/)
+## Installing Latest Version of Ubuntu (20.04.6 LTS)
 
-2. **Create a Bootable USB**
-   - Use Rufus for Windows or Balena Etcher for Mac to make your USB bootable with the downloaded ISO file.
+To set up your machine for this project, you need to install the latest version of Ubuntu, which is 20.04.6 LTS (Focal Fossa). Follow the steps below:
 
-3. **Install Ubuntu**
-   - Plug the USB into the target machine and start it in BIOS mode (typically by pressing the "Del" key during startup, but this can vary).
-   - Set the primary boot device to the USB.
-   - Follow the on-screen instructions to install the OS on your machine.
+1. Download Ubuntu 20.04.6 LTS (Focal Fossa)
+   - Visit the official Ubuntu releases page: [Ubuntu 20.04.6 LTS](https://releases.ubuntu.com/focal/)
+   - Download the ISO file from the provided link.
+
+2. Create a Bootable USB
+   - **For Windows Users:**
+     - Download and install [Rufus](https://rufus.ie/).
+     - Insert your USB drive and open Rufus.
+     - Select the downloaded Ubuntu ISO file and the USB drive. 
+     - Click "Start" to create the bootable USB.
+   - **For Mac Users:**
+     - Download and install [Balena Etcher](https://www.balena.io/etcher/).
+     - Insert your USB drive and open Balena Etcher.
+     - Select the downloaded Ubuntu ISO file and the USB drive.
+     - Click "Flash" to create the bootable USB.
+
+3. Install Ubuntu
+   - Plug the USB drive into the target machine.
+   - Start the machine and enter BIOS mode (this is typically done by pressing the "Del" key during startup, but it may vary depending on your system).
+   - In the BIOS menu, set the primary boot device to the USB drive.
+   - Save changes and exit the BIOS menu. The machine should now boot from the USB drive.
+   - Follow the on-screen instructions to install Ubuntu:
+     - Select your language and keyboard layout.
+     - Choose "Install Ubuntu" and follow the prompts.
+     - When asked about installation type, you can select "Erase disk and install Ubuntu" if this machine is dedicated to this project. **Note: This will delete all data on the machine's hard drive.**
+     - Follow the rest of the prompts to complete the installation.
+
+### Additional Steps
+   - After the installation is complete, remove the USB drive and restart the machine.
+   - Follow any additional on-screen prompts to complete the setup, including creating a user account and setting up your network connection.
+
+By following these steps, you will have the latest version of Ubuntu installed and ready for the next stages of your project setup.
+
 
 ## Configuring Wired Connection on Ubuntu (If You Don't Have WIFI)
 
