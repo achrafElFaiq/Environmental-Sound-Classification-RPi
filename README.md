@@ -160,7 +160,7 @@ These steps convert raw audio files into a standardized set of spectrograms, whi
 #### Model Conception
 ![Example Image](stagejapon/Model_analysis/Model_Architecture.png)
 
-#### Model Training
+#### **Model Training**
 For the training part we use the script learnmodel_ps2024.py.
 The trining process includes:
 
@@ -214,5 +214,5 @@ We created a GUI for our model using Python (PyQt5 Libraririe)
 
 
 
-# **<span style="color:blue">Main Title in Bold and Blue</span>**
+
 
