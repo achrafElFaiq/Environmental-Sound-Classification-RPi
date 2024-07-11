@@ -265,6 +265,11 @@ Discuss the results, including metrics and performance evaluation.
 
 We have developed a user-friendly Graphical User Interface (GUI) for our sound classification model using the PyQt5 library in Python. This GUI provides a seamless experience for users to interact with our model, offering two primary functionalities:
 
+- To use the app, you will need the PyQt5 library. Install it using:
+     ```bash
+     pip install PyQt5
+     ```
+
 1. **Choosing an Existing .wav File**:
    - Browse and select an existing .wav file.
    - Click the "Recognize" button to process the sound through our pre-trained convolutional neural network (CNN) model.
