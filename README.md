@@ -139,7 +139,6 @@ To enhance the robustness and generalization capability of our urban audio class
 
 The augmentation process was executed using the resources and tools available in the `urban-audio-classifier` repository by Eduardo Garcia Rajo. The specific notebook used for this process is `5-data-augmentation.ipynb`.
 
-## Data augmentation (Before and after for 2 different sounds)
 ![Example Image](stagejapon/app/data_aug.png)
 
 ### Data Preprocessing
