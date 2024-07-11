@@ -22,7 +22,7 @@ This project is developed as part of our internship research topic at OYAMA INST
 
 ## Machine
 
-### Installing Ubuntu 22.04.4 LTS (Jammy Jellyfish)
+### <u>Installing Ubuntu 22.04.4 LTS (Jammy Jellyfish)</u>
 To set up your machine for this project, you need to install the latest version of Ubuntu, which is 22.04.4 LTS (Jammy Jellyfish). Follow the steps below:
 
 1. **Download Ubuntu 22.04.4 LTS (Jammy Jellyfish)**
