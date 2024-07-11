@@ -211,7 +211,24 @@ Discuss the results, including metrics and performance evaluation.
 
 ## Raspberry
 
-We created a GUI for our model using Python (PyQt5 Libraririe) 
+We have developed a user-friendly Graphical User Interface (GUI) for our sound classification model using the PyQt5 library in Python. This GUI provides a seamless experience for users to interact with our model, offering two primary functionalities:
+
+1. **Choosing an Existing .wav File**:
+   - Browse and select an existing .wav file.
+   - Click the "Recognize" button to process the sound through our pre-trained convolutional neural network (CNN) model.
+   - The model analyzes the sound and displays the prediction result within the GUI.
+
+2. **Recording a New Sound Clip**:
+   - Record a new 4-second sound clip directly through the GUI.
+   - The recorded sound is automatically processed by the model.
+   - The prediction result is displayed immediately after the recording is completed.
+
+This intuitive interface simplifies the sound classification process, making it accessible to users with varying levels of technical expertise. By integrating functionalities for selecting and recording sounds, our GUI ensures easy utilization of our sound classification model for various applications, such as environmental sound recognition and audio analysis.
+
+![Example Image](stagejapon/app/app.png)
+
+
+
 
 
 
