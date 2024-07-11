@@ -3,6 +3,44 @@
 # Introduction
 This project is developed as part of our internship research topic at OYAMA INSTITUTE OF TECHNOLOGY under the guidance of Dr. HIRATA Katsumi. It focuses on creating a GUI application for the Raspberry Pi 4 that uses a Convolutional Neural Network (CNN) model to classify environmental sounds based on their spectrograms. The project involves setting up the necessary software environment on Ubuntu 20.04.6 LTS, configuring GPU support, and developing the model and the GUI application.
 
+
+# User guide
+
+Follow these steps to set up and run the sound classification model:
+
+1. **Download Dataset and Apply Data Augmentation**
+   - Obtain the UrbanSound8K or ESC50 dataset.
+   - Apply data augmentation as needed to enhance the dataset's variability and improve model performance.
+
+2. **Prepare Input Data**
+   - Run the script to preprocess the data and generate input for the model:
+     ```bash
+     python makeinputdata_ps2024.py
+     ```
+   - Ensure the project structure aligns with the paths specified in the script.
+
+3. **Train the Model**
+   - Train the convolutional neural network (CNN) using the preprocessed data:
+     ```bash
+     python learnmodel_ps2024.py
+     ```
+
+You can either use the model on command line or on a GUI:
+1. **Classification Without GUI**
+   - For classification using the command line:
+     ```bash
+     python classify_ps2024.py /path/to/wavfile
+     ```
+
+2. **Classification With GUI**
+   - For classification using the GUI:
+     ```bash
+     python app.py
+     ```
+
+All the details are explained below.
+
+
 # Table of Contents
 1. [Machine](#machine)
    - [Installing Ubuntu (22.04.4 LTS)](#installing-ubuntu-22044-lts)
@@ -139,6 +177,7 @@ To enhance the robustness and generalization capability of our urban audio class
 
 The augmentation process was executed using the resources and tools available in the `urban-audio-classifier` repository by Eduardo Garcia Rajo. The specific notebook used for this process is `5-data-augmentation.ipynb`.
 
+![Example Image](stagejapon/app/data_aug.png)
 
 ### Data Preprocessing
 
@@ -226,6 +265,11 @@ Discuss the results, including metrics and performance evaluation.
 # Raspberry
 
 We have developed a user-friendly Graphical User Interface (GUI) for our sound classification model using the PyQt5 library in Python. This GUI provides a seamless experience for users to interact with our model, offering two primary functionalities:
+
+- To use the app, you will need the PyQt5 library. Install it using:
+     ```bash
+     pip install PyQt5
+     ```
 
 1. **Choosing an Existing .wav File**:
    - Browse and select an existing .wav file.
