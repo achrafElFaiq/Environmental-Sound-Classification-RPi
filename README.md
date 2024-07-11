@@ -214,5 +214,5 @@ We created a GUI for our model using Python (PyQt5 Libraririe)
 
 
 
-
+# **<span style="color:blue">Main Title in Bold and Blue</span>**
 
