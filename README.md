@@ -201,10 +201,11 @@ The trining process includes:
 
 These steps train a convolutional neural network (CNN) to classify environmental sounds using the power spectrograms of the sounds.
 
-#### Model Analysis
+### Model Analysis
 Discuss the results, including metrics and performance evaluation.
 
 ##### Confusion Matrix
+
 ##### Accuracy and loss
 
 
