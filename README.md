@@ -25,13 +25,14 @@ Follow these steps to set up and run the sound classification model:
      python learnmodel_ps2024.py
      ```
 
-4. **Classification Without GUI**
+You can either use the model on command line or on a GUI:
+1. **Classification Without GUI**
    - For classification using the command line:
      ```bash
      python classify_ps2024.py /path/to/wavfile
      ```
 
-5. **Classification With GUI**
+2. **Classification With GUI**
    - For classification using the GUI:
      ```bash
      python app.py
