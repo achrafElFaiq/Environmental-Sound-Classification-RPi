@@ -3,6 +3,43 @@
 # Introduction
 This project is developed as part of our internship research topic at OYAMA INSTITUTE OF TECHNOLOGY under the guidance of Dr. HIRATA Katsumi. It focuses on creating a GUI application for the Raspberry Pi 4 that uses a Convolutional Neural Network (CNN) model to classify environmental sounds based on their spectrograms. The project involves setting up the necessary software environment on Ubuntu 20.04.6 LTS, configuring GPU support, and developing the model and the GUI application.
 
+
+# User guide
+
+Follow these steps to set up and run the sound classification model:
+
+1. **Download Dataset and Apply Data Augmentation**
+   - Obtain the UrbanSound8K or ESC50 dataset.
+   - Apply data augmentation as needed to enhance the dataset's variability and improve model performance.
+
+2. **Prepare Input Data**
+   - Run the script to preprocess the data and generate input for the model:
+     ```bash
+     python makeinputdata_ps2024.py
+     ```
+   - Ensure the project structure aligns with the paths specified in the script.
+
+3. **Train the Model**
+   - Train the convolutional neural network (CNN) using the preprocessed data:
+     ```bash
+     python learnmodel_ps2024.py
+     ```
+
+4. **Classification Without GUI**
+   - For classification using the command line:
+     ```bash
+     python classify_ps2024.py /path/to/wavfile
+     ```
+
+5. **Classification With GUI**
+   - For classification using the GUI:
+     ```bash
+     python app.py
+     ```
+
+All the details are explained below.
+
+
 # Table of Contents
 1. [Machine](#machine)
    - [Installing Ubuntu (22.04.4 LTS)](#installing-ubuntu-22044-lts)
