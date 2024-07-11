@@ -161,32 +161,56 @@ These steps convert raw audio files into a standardized set of spectrograms, whi
 ![Example Image](stagejapon/Model_analysis/Model_Architecture.png)
 
 #### Model Training
-Provide details on the training process, including hyperparameters, epochs, and hardware used.
+For the training part we use the script learnmodel_ps2024.py.
+The trining process includes:
+
+1. **Set Parameters and Conditions**
+   - Set parameters like `IMAGESIZE`, `SAMPLEFREQ`, `NNDROPOUT`, `EPOCHS`, and more.
+   - Define the dataset source and frequency scale.
+
+2. **One-Hot Encode Labels**
+   - Define a function to one-hot encode the labels.
+
+3. **Check Condition Parameters and Set Output File Names**
+   - Set the dataset-specific parameters and check for the correct frequency scale.
+
+4. **Setup Data Directory**
+   - Set up the directory names for data and output.
+   - Ensure the output directory exists or create it.
+
+5. **Prepare Training and Test Data**
+   - Split the dataset into training and test sets based on folds.
+   - Load training data and labels, normalize, and apply transformations like Mel scaling if required.
+   - Load and preprocess test data similarly.
+
+6. **Build the Convolutional Neural Network**
+   - Define the CNN architecture with convolutional layers, batch normalization, activation functions, max pooling, flattening, dense layers, and dropout.
+   - Compile the model using the Adam optimizer and set the loss function and metrics.
+
+7. **Train the Model**
+   - Fit the model on the training data with specified batch size and epochs.
+   - Monitor the training process using callbacks like early stopping, tensorboard, and model checkpoint.
+
+8. **Evaluate the Model**
+   - Predict on the test data and compute the confusion matrix.
+   - Normalize the confusion matrix and print it.
+   - Evaluate the model's performance on the test data and print the accuracy.
+
+9. **Save the Model**
+    - Save the trained CNN model and its parameters to a file in the output directory.
+
+These steps train a convolutional neural network (CNN) to classify environmental sounds using the power spectrograms of the sounds.
 
 #### Model Analysis
 Discuss the results, including metrics and performance evaluation.
 
-We used a simple model with the following structure:
-
-- **Input Layer**
-  - 728 neurons (inputs)
-
-- **Hidden Layers**
-  - 4 Hidden Layers, each containing:
-    - Batch Normalization
-    - Activation: using ReLU function
-    - Max Pooling
-
-- **Output Layer**
-  - 10 classes, each corresponding to a type of sound.
+##### Confusion Matrix
+##### Accuracy and loss
 
 
+## Raspberry
 
-## Data
-
-For data, we used the UrbanSound dataset: [UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html). 
-
-A README file to understand how this dataset is structured is provided in the "Data" folder.
+We created a GUI for our model using Python (PyQt5 Libraririe) 
 
 
 
