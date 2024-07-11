@@ -36,7 +36,7 @@ To set up your machine for this project, you need to install the latest version 
    - Set the primary boot device to the USB.
    - Follow the on-screen instructions to install the OS on your machine.
 
-#### Additional Steps
+### Additional Steps
    - After the installation is complete, remove the USB drive and restart the machine.
    - Follow any additional on-screen prompts to complete the setup, including creating a user account and setting up your network connection.
 
@@ -60,7 +60,7 @@ By following these steps, you will have the focal version of Ubuntu installed an
 
 ### Setup Environment for GPU Usage
 
-#### Local Setup
+### Local Setup
 
 1. **Install GPU Drivers**
    - GPU drivers might be provided with the OS.
@@ -89,7 +89,7 @@ By following these steps, you will have the focal version of Ubuntu installed an
      print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
      ```
 
-#### Virtual Environment Setup (Python 3.9.19)
+### Virtual Environment Setup (Python 3.9.19)
 
 1. **Install Virtualenv and Virtualenvwrapper**
    ```sh
@@ -119,11 +119,11 @@ You will find the names of all the packages installed in our environment inside 
 
 ### Model
 
-#### Data
+### Data
 For data, we used the UrbanSound dataset: [UrbanSound8K](https://urbansounddataset.weebly.com/urbansound8k.html). 
 A README file to understand how this dataset is structured is provided in the "Data" folder.
 
-#### Data Preprocessing
+### Data Preprocessing
 For this part we use the makeinputdata_ps2024.py script which takes .wav formated sound files organized based on the urbansound dataset and we get 10 (classes) collections of spectrograms of the sounds
 
 For each fold, the script performs the following steps:
@@ -157,10 +157,10 @@ For each fold, the script performs the following steps:
 These steps convert raw audio files into a standardized set of spectrograms, which can be used as input for machine learning models.
 
 
-#### Model Conception
+### Model Conception
 ![Example Image](stagejapon/Model_analysis/Model_Architecture.png)
 
-#### **Model Training**
+### Model Training:
 For the training part we use the script learnmodel_ps2024.py.
 The trining process includes:
 
