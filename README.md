@@ -5,7 +5,7 @@ This project is developed as part of our internship research topic at OYAMA INST
 
 ## Table of Contents
 1. [Machine](#machine)
-   - [Installing Ubuntu (20.04.6 LTS)](#installing-ubuntu-22044-lts)
+   - [Installing Ubuntu (22.04.4 LTS)](#installing-ubuntu-22044-lts)
    - [Configuring Wired Connection on Ubuntu (If You Don't Have WIFI)](#configuring-wired-connection-on-ubuntu-if-you-dont-have-wifi)
    - [Setup Environment for GPU Usage](#setup-environment-for-gpu-usage)
      - [Local Setup](#local-setup)
@@ -22,7 +22,7 @@ This project is developed as part of our internship research topic at OYAMA INST
 
 ## Machine
 
-### Installing <u>Ubuntu 22.04.4 LTS (Jammy Jellyfish)</u>
+### Installing Ubuntu 22.04.4 LTS (Jammy Jellyfish)
 To set up your machine for this project, you need to install the latest version of Ubuntu, which is 22.04.4 LTS (Jammy Jellyfish). Follow the steps below:
 
 1. **Download Ubuntu 22.04.4 LTS (Jammy Jellyfish)**
