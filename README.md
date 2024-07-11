@@ -5,7 +5,7 @@ This project is developed as part of our internship research topic at OYAMA INST
 
 ## Table of Contents
 1. [Machine](#machine)
-   - [Installing Ubuntu (20.04.6 LTS)](#installing-latest-version-of-ubuntu-20046-lts)
+   - [Installing Ubuntu (20.04.6 LTS)](#installing-ubuntu-22044-lts)
    - [Configuring Wired Connection on Ubuntu (If You Don't Have WIFI)](#configuring-wired-connection-on-ubuntu-if-you-dont-have-wifi)
    - [Setup Environment for GPU Usage](#setup-environment-for-gpu-usage)
      - [Local Setup](#local-setup)
