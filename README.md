@@ -131,7 +131,6 @@ To enhance the robustness and generalization capability of our urban audio class
 - **Volume Changes**: Randomly adjusting the volume levels to create variations in loudness.
 - **Shifting**: Shifting the audio in time to create variations in temporal alignment.
 
-### Workflow
 
 1. **Initial Dataset**: The original dataset comprises audio samples categorized into different folders, each representing a distinct sound class.
 2. **Augmentation Process**: For each original folder, 7 additional folders containing augmented data were generated. This was accomplished using the `5-data-augmentation.ipynb` notebook.
