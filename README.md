@@ -214,7 +214,7 @@ These steps convert raw audio files into a standardized set of spectrograms, whi
 
 
 ### Model Conception
-![Example Image](stagejapon/Model_analysis/Model_Architecture.png)
+![Example Image](stagejapon/Images/Model_Architecture.png)
 
 ### Model Training:
 For the training part we use the script learnmodel_ps2024.py.
