@@ -284,12 +284,6 @@ We have developed a user-friendly Graphical User Interface (GUI) for our sound c
 
 This intuitive interface simplifies the sound classification process, making it accessible to users with varying levels of technical expertise. By integrating functionalities for selecting and recording sounds, our GUI ensures easy utilization of our sound classification model for various applications, such as environmental sound recognition and audio analysis.
 
-## **Recording Case**
-When you click on the "Record" button, a progress bar will appear, indicating that the recording is in progress. Once the recording is complete, the sound clip will automatically be processed through the Convolutional Neural Network (CNN) model. The model will analyze the sound and predict its nature, displaying the result within the GUI.
-
-## **Existing File choice**
-When you click on the "Choose File" button, a pop-up window will appear, allowing you to select a .wav file from your system. After selecting your file, click on the "Recognize" button. The sound clip will automatically be processed through the Convolutional Neural Network (CNN) model. The model will analyze the sound and predict its nature, displaying the result within the GUI.
-
 
 
 
